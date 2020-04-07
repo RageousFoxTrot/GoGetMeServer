@@ -24,8 +24,8 @@ connect($$.db_url, { useNewUrlParser: true, useUnifiedTopology: true })
 
 app.use('*', (req, res, next) => {
     res.setHeader('X-Appname', 'GoGetMe');
-    res.setHeader('Access-Control-Allow-Origin', '127.0.0.1');
-    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, DELETE');
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PATCH, DELETE');
     res.removeHeader('X-Powered-By');
 
     console.log('[' + req.method + '] ' + ' - ' + req.baseUrl);
