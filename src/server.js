@@ -36,10 +36,10 @@ app.use('*', (req, res, next) => {
     console.log('[' + req.method + '] ' + ' - ' + req.baseUrl);
     next();
 });
-app.use('/users', routes_1.UserRouter);
+app.use('/apis/users', routes_1.UserRouter);
 app.get('*', (req, res, next) => {
     res.send('<h1 style="text-align:center">403 - FORBIDDEN ACCESS</h1>');
 });
-http_1.createServer(app).listen(port, host, () => {
+http_1.createServer(app).listen(port, () => {
     console.log('Server running @ http://' + host + ':' + port + '/');
 });

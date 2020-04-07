@@ -37,6 +37,6 @@ app.get('*', (req, res, next) => {
     res.send('<h1 style="text-align:center">403 - FORBIDDEN ACCESS</h1>');
 });
 
-createServer(app).listen(port, host, () => {
+createServer(app).listen(port, () => {
     console.log('Server running @ http://' + host + ':' + port + '/');
 });
