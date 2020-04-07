@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/f61d0cc3-6730-4f5e-8ddb-e173f6d18fa0/resourceGroups/GoGetMe/providers/Microsoft.Web/sites/GGMAPI",
+    "appService.deploySubpath": ""
+}
